@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AVATAR
+namespace AVATAR          
 {
     class Human : person
     {
         public enum Job { Warriorfireman, Baker, Colonel, Emperor, Teacher, Doctor, Merchant, Femmer, Sailor, Miner, Lieutenant,  }
-         
         public override string Name { get; set; }
         public override int Power { get ; set; }
         public  override Age Personage { get; set; }
         public override bool Isalive { get; set; } = true;
         public override bool Canfight { get  ; set  ; }
-
+        
         public Human()
         {
             if (Canfight == false)
@@ -54,6 +53,6 @@ namespace AVATAR
             }
         }
 
-           
+        
     }
 }

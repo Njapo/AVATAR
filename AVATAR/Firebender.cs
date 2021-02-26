@@ -7,13 +7,17 @@ namespace AVATAR
 {
     class Firebender : person, Interfaces.ICanfirebending
     {
+        public  void eat()
+        {
+              
+        }
         public int totalmoney { get; set; } 
         public bool Canfirebending { get; set; }
         public  override int Power { get; set; } 
         public override string Name { get; set; } 
         public  override Age Personage { get; set; }
         public override bool Isalive { get; set; } = true;
-        public override bool Canfight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override bool Canfight { get  ; set  ; }
 
         public Firebender()
         {

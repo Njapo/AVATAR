@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AVATAR
 {
-    class Battle : WAR<person>
+    class Battle : WAR<person>    
     {
         public bool onearmybattleend { get; set; }
         public bool secondarmybattleend { get; set; }
@@ -31,6 +31,7 @@ namespace AVATAR
                             secondarmy[j].Isalive = false;
                             onearmy[i].Power = -secondarmy[j].Power;
                             secondarmydeads++;
+                            
                         }
                       else if(onearmy[i].Power<secondarmy[j].Power)
                         {
@@ -38,6 +39,7 @@ namespace AVATAR
                             onearmy[i].Isalive = false;
                             onearmy.RemoveAt(i);
                             onearmydeads++;
+                            break;
                         }
                         else
                         {
@@ -49,6 +51,7 @@ namespace AVATAR
                             secondarmydeads++;
                             onearmy.RemoveAt(i);
                             secondarmy.RemoveAt(j);
+                            break;
                         }
                     }
                 }

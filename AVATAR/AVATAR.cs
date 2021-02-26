@@ -15,7 +15,7 @@ namespace AVATAR
         public override int Power { get  ; set  ; }
         public bool Avatarstate { get; set; }
         public override bool Isalive { get; set; } = true;
-        public override bool Canfight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override bool Canfight { get  ; set ; }
 
         List<bool> Bendinglist;
         public AVATAR()

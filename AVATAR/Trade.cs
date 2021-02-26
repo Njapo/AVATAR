@@ -6,7 +6,6 @@ namespace AVATAR
 {
       class Trade
       {
-         
         readonly   Dictionary<Acceptablematerial, int> Returnmoney;
         public Trade()
         {
@@ -38,7 +37,7 @@ namespace AVATAR
             }
             Person.Money += Money;
         }
-
-     }
+          
+      }
     
 }

@@ -14,7 +14,7 @@ namespace AVATAR
         public  enum Age {baby,teen,middleage,aged }; 
         protected enum Gender { man, woman}
         public int Money { get; set; }
-        public abstract   bool Isalive { get; set; }  
-
+        public abstract  bool Isalive { get; set; }
+         
     } 
 }

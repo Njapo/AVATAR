@@ -11,7 +11,7 @@ namespace AVATAR
         public override string Name { get; set; } 
         public  override Age Personage { get; set; }
         public override bool Isalive { get; set; } = true;
-        public override bool Canfight { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public override bool Canfight { get  ; set  ; }
 
         public Earthbender()
         {
